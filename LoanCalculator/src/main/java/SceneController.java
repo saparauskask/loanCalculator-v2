@@ -82,7 +82,7 @@ public class SceneController {
 			public void sceneChangeCalculate(ActionEvent event) {
 			// we don't have access to stage which was set before in start() method therefore we need to set it up
 			try {
-				Parent calculateRoot = FXMLLoader.load(getClass().getResource("Calculate.fxml")); // same as before
+				Parent calculateRoot = FXMLLoader.load(getClass().getResource("/Calculate.fxml")); // same as before
 				Scene calculateScene = new Scene(calculateRoot);
 				
 				//gets the stage information from ActionEvent and sets for new Stage

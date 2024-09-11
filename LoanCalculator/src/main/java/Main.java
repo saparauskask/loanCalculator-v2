@@ -15,13 +15,13 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			primaryStage.setResizable(false);
-			Image icon = new Image("bank-meta.png");
-			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+			//Image icon = new Image("/bank-meta.png");
+			Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
 			//BorderPane root = new BorderPane();
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			//scene.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
 			primaryStage.setTitle("Būsto paskolos skaičiuoklė");
-			primaryStage.getIcons().add(icon);
+			//primaryStage.getIcons().add(icon);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			
